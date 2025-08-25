@@ -17,4 +17,22 @@ public class ArithmaticCalc {
 		return "" + (a+b);
 	}
 
+	@GetMapping("sub/{A}/{B}")
+	public String sub(@PathVariable("A") int a, @PathVariable("B") int b)
+	{
+		return "" + (a-b);
+	}
+
+	@GetMapping("mul/{A}/{B}")
+	public String mul(@PathVariable("A") int a, @PathVariable("B") int b)
+	{
+		return "" + (a*b);
+	}
+
+	@GetMapping("div/{A}/{B}")
+	public String div(@PathVariable("A") int a, @PathVariable("B") int b)
+	{
+		return "" + (a/b);
+	}
+
 }
